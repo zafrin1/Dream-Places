@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</head>
+<body>
+    <div class="container border border-5" style="border-color:white  black;">
+        <div class="form-box" style="border: 2px; width: 400px; height: 400px; background-color: rgb(245, 145, 175); border-radius: 20px; border: bisque;">
+            <h1 id="title">Sign Up</h1>
+            <form onsubmit="siginUp" >
+                <div class="input-group">
+                    <div class="input-field" id="nameField" style="background-color:  rgb(240, 175, 194);">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="name" id="name">
+                    </div>
+                    <div class="input-field  mb-3" style="background-color:  rgb(240, 175, 194);">
+                        <i class="fa-regular fa-envelope"></i>
+                       
+                        <input type="email" id="email" id="email" placeholder="email" class="form-control" >
+                        <div class="form-text text-white"></div>
+                    </div>
+                    <div class="input-field" style="background-color:  rgb(240, 175, 194);">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <p>Lost password <a href="#"> Click Here!</a>
+                    </p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    
+
+    <script src="loginpage.js"></script>
+</body>
+</html>

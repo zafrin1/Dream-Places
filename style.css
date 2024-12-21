@@ -1,0 +1,288 @@
+.body{
+    margin: auto;
+    transition: 0.5s;
+     width: 900px;
+     max-width: 90dvw;
+}
+.con{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    cursor: pointer;
+    height: 80px;
+}
+.shopping{
+   
+    position: relative;
+}
+.shopping .quantity{
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+img{
+    width:50px ;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 25px;
+    row-gap: 10px;
+   
+    margin: 10px 30px;
+    padding: 100px 100px;
+}
+.products .item{
+    text-align: center;
+
+    height: 350px;
+    width: 700px;
+    padding: 0;
+    row-gap: 0;
+    justify-content: center;
+     border-radius: 20px;
+     box-shadow:  0 0px 50px rgb(199, 199, 199);
+     letter-spacing: 1px;
+     cursor: pointer;
+}
+.products .item img{
+    height: 130px;
+    width: 100px;
+    filter: drop-shadow(10px 10px 5px #d3d3d3);
+
+}
+.products .item img:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+.products .item .name {
+ font-weight: 600;
+}
+.products .item .price{
+    margin: 10px;
+    
+}
+.products.item button{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 400px;
+    background: black;
+    height: 100vh;
+    transition: 0.5s;
+}
+.cart h3{
+    font-weight: 100px;
+    text-align: center;
+    color:#fff;
+    margin-top: 10px;
+}
+.cart .checkout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.cart .checkout div{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: beige;
+}
+
+ .cart .checkout div:nth-child(2){
+    background-color: #000;
+    color: white;
+ }
+
+ .active .cart{
+    left: calc(100% - 400px);
+   
+ }
+
+.productlist{
+    padding: 15px;
+    height: auto;
+}
+.productlist li{
+    display: grid;
+    grid-template-columns: 100px repeat(3,1fr);
+    color: white;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.productlisr li img{
+ width: 50px;
+ background: #fff;
+}
+.productlist li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productlist li button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.productlist .count{
+padding: 10px;
+}
+
+.colorchange{
+    color: black;
+}
+.colorchange:hover{
+color: black;
+}
+
+.item{
+    
+    padding: 20px 20px;
+}
+
+.bannerbg {
+    background-image: url("image copy 11.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   }
+
+   
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding:  50px 60px 70px;
+    text-align: center;
+
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(37, 39, 102);
+    position: relative;
+    padding:2px 2px;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+   max-height: 65px;
+   transition: max-height 0.5s;
+   overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+ color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+     height: 280px;
+}
+.btn-field button.disable{
+     background-color: #eaeaea;
+     color: #555;
+}
+
+
+#div1{
+   box-shadow: -4px -1px 25px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px -1px 25px -3px rgba(0,0,0,0.75);
+box-shadow: -4px -1px 25px -3px rgba(0,0,0,0.75);
+
+}
+.aaa :hover{
+    scale: 1.1;
+transition: 0.2s;
+
+}
+
+#div2{
+box-shadow: -4px -1px 16px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px -1px 16px -11px rgba(0,0,0,0.75);
+box-shadow: -4px -1px 16px -11px rgba(0,0,0,0.75);}
+.how h1{
+    color: black;
+}
+.how h1:hover{
+    color: red;
+   
+}

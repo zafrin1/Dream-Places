@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        width: 500px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <form id="loginForm" style="background-color: rgb(245, 145, 175); height: 250px; width: 400px;border-radius: 20px;">
+      <h2 style="text-align: center;">Login Me</h2> 
+      <input type="email" id="email" name="email" required placeholder="email"  style="background-color:  rgb(245, 200, 214); border-radius: 10px; "/>
+      <input type="password" id="password" placeholder="Password" required  style="background-color:  rgb(245, 200, 214); border-radius: 10px; "/>
+      <button type="submit " class="btn btn bg-warning">Login</button>
+      &nbsp;<a href="register.html" style="color: rgb(5, 5, 5);">Go to Register</a>
+    </form>
+
+    <script>
+      document.getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const username = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          const user = localStorage.getItem(username);
+          console.log(user);
+          
+          if (user) {
+            const parsedUser = JSON.parse(user);
+            console.log(parsedUser);
+            if (parsedUser.password === password) {
+              localStorage.setItem("user", JSON.stringify(parsedUser));
+              window.location.href ="index1.html";
+            } else {
+              alert("Incorrect password");
+            }
+          } else {
+            alert("User not found");
+          }
+        });
+        
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

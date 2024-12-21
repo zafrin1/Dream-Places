@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> i am a zafrin <span class="auto-type"></span></h1>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+  strings :["Dream Plaza"],
+  typedSpeed: 150,
+  backSpeed: 150,
+  loop: true
+})
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .product-details {
+      display: inline-block;
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .product-details img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .product-details h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Details</h1>
+  <div id="product-details" class="product-details"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get('id'), 10);
+
+    const products = [
+      { id: 1, name: "Product 1", image: "https://via.placeholder.com/150" },
+      { id: 2, name: "Product 2", image: "https://via.placeholder.com/150" },
+      { id: 3, name: "Product 3", image: "https://via.placeholder.com/150" },
+    ];
+
+    const product = products.find(p => p.id === productId);
+
+    if (product) {
+      const productDetails = document.getElementById('product-details');
+      productDetails.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>Some details about ${product.name}...</p>
+      `;
+    } else {
+      document.body.innerHTML = "<h1>Product not found</h1>";
+    }
+  </script>
+</body>
+</html>

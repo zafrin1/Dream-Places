@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section class="banner" style="color: white;">
+        <div class=" bottom-0 end-0 ">
+          <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(124, 50, 120);">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="d-flex">
+                  <div>
+                    <a class="navbar-brand" href="index1.html"> <img src="image.png" style="height: 40px; width: 40px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse gap-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+    
+                      <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#Home"style="color: white;">Home</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Popular"style="color: white;">Popular</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Featured"style="color: white;">Featured</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Choose Us"style="color: white;">Choose Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Discover"style="color: white;">Discover</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Meet"style="color: white;">Meet</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Clients"style="color: white;">Clients</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Partners"style="color: white;">Partners</a>
+                      </li>
+                    </ul>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <li class="nav-item dropdown" style="list-style-type: none; color: white;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                      <i class="fa-solid fa-earth-americas"></i> ENG
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item" style="list-style: none;">
+                    <a class="nav-link active" aria-current="page" href="conect.html" style="color: white;">Connect</a>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item" style="list-style: none;">
+                    <a class="nav-link active" aria-current="page" href="login.html" style="color: white;">Signin</a>
+                  </li>
+                </div>
+                <div>
+                  <li class="nav-item" style="list-style: none;">
+                    <p class="nav-link active" id="logoutButton" aria-current="page" style="color: white;cursor: pointer;">Logout</p>
+                  </li>
+                </div>
+                <div class="p-2">
+                <div class="shopping">
+                  <li class="nav-item" style="list-style: none;">
+                  <i class="fa-solid fa-heart"></i>
+                  <span class="quantity">0</span>
+                </li>
+              </div></div>
+              
+       
+               
+                <div>
+                  <img src="imagea.png" style="height: 40px; width: 40px; border-radius: 40px;">
+                </div>
+                <div>
+                  <li class="nav-item dropdown" style="list-style: none; ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                      Hi Mary
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </div>
+                <div class="btn btn bg-warning " style="height: 40px; width: 150px;" >Add Listing<a href="" style="color: white;">
+                  <i class="fa-solid fa-house-tsunami"></i>
+                </a></div>
+                </li>
+    
+              </div>
+          </nav>
+    
+        </div>
+    
+        </div>
+      </section><br><br>
+    
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 20px;
+        }
+        .product-details {
+          display: inline-block;
+          text-align: left;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 20px;
+        }
+        .product-details img {
+          max-width: 100%;
+          border-radius: 5px;
+        }
+        .product-details h2 {
+          margin-top: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Product Details</h1>
+      <div id="product-details" class="product-details"></div>
+    
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'), 10);
+    
+        let hello = [
+        {
+            id:1,
+            name:"Sea Breeze",
+            image:"b-1.jpg",
+            price:"1000",
+            rating:5,
+            location:"Est St,77-Central Park South,NYC",
+            House:"A house is a building that is made for people to live in . "
+        },
+        {
+            id:2,
+            name:"The Cottage",
+            image:"b-11.jpg",
+            price:"1000",
+            rating:5,
+             location:"Est St,77-Central Park South,NYC",
+             House:"A house is a building that is made for people to live in . "
+            },
+           
+        {
+            id:3,
+            name:"Blue Bay",
+            image:"b-12.jpg",
+            price:"1000",
+            rating:5,
+             location:"Est St,77-Central Park South,NYC",
+              House:"A house is a building that is made for people to live in . "
+        },
+        {
+            id:4,
+            name:"The Oasis",
+            image:"fp-10.jpg",
+            price:"1000",
+            rating:5,
+             location:"Est St,77-Central Park South,NYC",
+              House:"A house is a building that is made for people to live in . "
+        },
+        {
+            id:5,
+            name:"Dreamscape",
+            image:"fp-11.jpg",
+            price:"1000",
+            rating:5,
+             location:"Est St,77-Central Park South,NYC",
+              House:"A house is a building that is made for people to live in . "
+        },
+        {
+            id:6,
+            name:"The Palace",
+            image:"fp-12.jpg",
+            price:"5000",
+            rating:5,
+             location:"Est St,77-Central Park South,NYC",
+              House:"A house is a building that is made for people to live in . "
+        },
+        
+     ];
+    
+        const product = hello.find(test => test.id === productId);
+    
+        if (product) {
+          const productDetails = document.getElementById('product-details');
+          productDetails.innerHTML = `<div class="">
+            <div class=""><h2>${product.name}</h2><img src="${product.image}" alt="${product.name}" style="height: 400px;
+           width: 500px;"> </div>
+           <div></br></br></br>
+            <h5>location: <i class="fa-solid fa-location-dot"></i>${product.location}</h5>
+            <p>price:$ ${product.price}</p> 
+            <p>House: ${product.House}</p>
+            </div>
+          </div>`;
+        } else {
+          document.body.innerHTML = "<h1>Product not found</h1>";
+        }
+      </script>
+
+
+    <section class="d-flex container center" style="margin-top: 100px;">
+      
+<div class="container " style="text-align: left; height: 600px; width: 900px; margin-top: 40px;"><div class="border p-4">
+<h3 style="color: red;">Description</h3>
+  <p > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit.
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit.
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit.</p>
+</div>
+
+</div>
+
+<div class="center container " style="text-align: left;">
+<div class="p-4">
+<h1 style="color:  rgb(124, 50, 120)" >Floor Plans</h1>
+<img class="border p-4" src="floor-plan-1.png" alt="" style="height: 400px; width: 600px; justify-content: center;">
+
+</div>
+
+</div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="Partners">
+
+      <div>
+        <h1 style="text-align: center;">Our Partners</h1>
+        <p style="text-align: center;">The Companies That Represent Us.</p>
+      </div>
+      <br><br><br>
+      <div class="gap-3 p-4" style="text-align: center; margin-bottom: 20px;">
+        <img src="logo.jpg" alt="" style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo2.jpg" alt=""  style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo7.jpg" alt="" style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo2.jpg" alt=""  style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo3.jpg" alt=""  style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo4.jpg" alt=""  style="height: 100px; width: 100px; gap: 4px;">
+        <img src="logo6.jpg" alt="" style="height: 100px; width: 100px; gap: 4px;">
+      </div>
+    </section>
+
+
+
+
+    <section class="" id="Navigation" style="background-color: rgb(124, 50, 120); color: white;">
+      <br><br><br>
+      <div class="d-flex  p-6 container gap-3">
+
+
+
+        <div style="height: 300px; width: 400px;">
+          <img src="image copy 10.png" style="height: auto; width: 180px;"><br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam,
+            perspiciatis, aspernatur officiis esse.</p>
+          <div class="d-flex gap-2">
+            <div> <i class="fa-solid fa-location-dot  "></i></div>
+            <div>
+              <p>95 South Park Avenue, USA</p>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div> <i class="fa-solid fa-phone"></i></div>
+            <div>
+              <p>+456 875 369 208</p>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div> <i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p>support@findhouses.com</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div style="height: 400px; width: 400px;">
+          <h3>Navigation</h5><br>
+
+            <div class="d-flex gap-3">
+
+
+              <div>
+                <p>Home One</p>
+                <p>Properties Right</p>
+                <p>Properties List</p>
+                <p>Property Details</p>
+                <p>Agents Listing</p>
+              </div>
+              <div>
+                <p>Agents Details</p>
+                <p>About Us</p>
+                <p>Blog Default</p>
+                <p>Blog Details</p>
+                <p>Contact Us</p>
+              </div>
+            </div>
+        </div>
+        <div>
+          <h3>Twitter Feeds</h3><br>
+          <div class="d-flex gap-3">
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div>
+              <p>@findhouses all share them with me baby said inspet.</p>
+              <p>about 5 days ago</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div>
+              <p>@findhouses all share them with me baby said inspet.</p>
+              <p>about 5 days ago</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div>
+              <p>@findhouses all share them with me baby said inspet.</p>
+              <p>about 5 days ago</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="" style="height: 200px; width: 300px;">
+          <h3>Newsletters</h3><br>
+          <p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe to receive news in your inbox.</p>
+          <div class="d-flex">
+            <input type="text" placeholder="Enter Your Name"
+              style="background-color: rgb(255, 253, 253); border-radius: 3px;">
+            <button class="btn btn-secondary" style="background-color: rgb(153, 43, 61);">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="container justify-content-evenly d-flex ">
+        <div>
+          <p class="">2021 © Copyright - All Rights Reserved.</p>
+        </div>
+        <div class="d-flex  gap-3"> <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i><i
+            class="fa-brands fa-instagram"></i></div>
+      </div>
+    </section>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

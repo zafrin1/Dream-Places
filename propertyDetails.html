@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .product-details {
+      display: inline-block;
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .product-details img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .product-details h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Details</h1>
+  <div id="product-details" class="product-details"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get('id'), 10);
+
+    let hello = [
+    {
+        id:1,
+        name:"Sea Breeze",
+        image:"b-1.jpg",
+        price:"1000",
+        rating:5,
+    },
+    {
+        id:2,
+        name:"The Cottage",
+        image:"b-11.jpg",
+        price:"1000",
+        rating:5,
+    },
+    {
+        id:3,
+        name:"Blue Bay",
+        image:"b-12.jpg",
+        price:"1000",
+        rating:5,
+    },
+    {
+        id:4,
+        name:"The Oasis",
+        image:"fp-10.jpg",
+        price:"1000",
+        rating:5,
+    },
+    {
+        id:5,
+        name:"Dreamscape",
+        image:"fp-11.jpg",
+        price:"1000",
+        rating:5,
+    },
+    {
+        id:6,
+        name:"The Palace",
+        image:"fp-12.jpg",
+        price:"5000",
+        rating:5,
+    },
+ ];
+
+    const product = hello.find(test => test.id === productId);
+
+    if (product) {
+      const productDetails = document.getElementById('product-details');
+      productDetails.innerHTML = `
+        <img src="Image/${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>Some details about ${product.name}...</p>
+      `;
+    } else {
+      document.body.innerHTML = "<h1>Product not found</h1>";
+    }
+  </script>
+</body>
+</html>
